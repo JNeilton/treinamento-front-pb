@@ -5,6 +5,7 @@
         b-nav-item(to="/") Home
         b-nav-item(to="/about") About
         b-nav-item(to="/form") Form
+        b-nav-item(to="/vuex") Vuex
 
       router-view
 </template>
@@ -14,6 +15,3 @@ export default {
   name: 'App',
 }
 </script>
-
-<style lang="scss">
-</style>
