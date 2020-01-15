@@ -24,14 +24,7 @@
       .group-b(v-if="selected === 'b'")
         p Campos do grupo B
 
-      //- b-form-group(label="Lista de usuários")
-      //-   b-form-radio(
-      //-     v-for="user in users"
-      //-     :key="user.id"
-      //-     :value="user.id"
-      //-     name="user"
-      //-     v-model="userSelected"
-      //-   ) {{ user.name }}
+      user-radio-list
 
       b-button(type="submit") Enviar
 
@@ -41,12 +34,14 @@
 
 <script>
 import UserSelect from '@/components/user-select.vue'
+import UserRadioList from '@/components/user-radio-list.vue'
 
 export default {
   name: 'Form',
 
   components: {
     UserSelect,
+    UserRadioList,
   },
 
   data: () => ({
