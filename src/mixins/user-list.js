@@ -2,6 +2,7 @@ export default {
   data: () => ({
     users: [],
     userSelected: null,
+    userValidation: false,
   }),
 
   mounted() {
