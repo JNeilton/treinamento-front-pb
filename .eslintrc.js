@@ -4,10 +4,12 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:vue/essential',
+    'plugin:vue/recommended',
     '@vue/airbnb',
   ],
   rules: {
+    semi: [2, 'never'],
+    quotes: [2, 'single'],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   },
@@ -24,4 +26,4 @@ module.exports = {
       },
     },
   ],
-};
+}
